@@ -18,13 +18,17 @@ public class Calculator
 	{
 		return n1/n2;
 	}
+	public static int percentage(int n1,int n2)
+	{
+		return (n1*n2)/100;
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		int ch=0,res=0;
 		Scanner s = new Scanner(System.in);
-		while(ch!=5)
+		while(ch!=6)
 		{
 			System.out.println("Enter the numbers: ");
 			int n1 = s.nextInt();
@@ -33,7 +37,8 @@ public class Calculator
 			System.out.println("2.Subtraction");
 			System.out.println("3.Multiplication");
 			System.out.println("4.Division");
-			System.out.println("5.Exit");
+			System.out.println("5.Percentage");
+			System.out.println("6.Exit");
 			System.out.println("Enter your choice: ");
 			ch = s.nextInt();
 			switch(ch)
@@ -45,6 +50,8 @@ public class Calculator
 				case 3: res=mul(n1,n2);
 						break;
 				case 4: res=div(n1,n2);
+						break;
+				case 5: res=percentage(n1,n2);
 						break;
 				default: System.out.println("Invalid choice");
 			}
