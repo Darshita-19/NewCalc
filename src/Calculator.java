@@ -28,7 +28,7 @@ public class Calculator
 
 		int ch=0,res=0;
 		Scanner s = new Scanner(System.in);
-		while(ch!=6)
+		while(ch!=7)
 		{
 			System.out.println("Enter the numbers: ");
 			int n1 = s.nextInt();
@@ -53,6 +53,7 @@ public class Calculator
 						break;
 				case 5: res=percentage(n1,n2);
 						break;
+				case 6: System.out.println("Exit");
 				default: System.out.println("Invalid choice");
 			}
 			System.out.println("Result: " +res);
