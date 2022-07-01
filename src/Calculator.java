@@ -27,7 +27,8 @@ public class Calculator
 		// TODO Auto-generated method stub
 
 		int ch=0,res=0;
-		Scanner s = new Scanner(System.in);
+		int n1=7;
+		int n2=9;
 		while(ch!=7)
 		{
 			System.out.println("Enter the numbers: ");
