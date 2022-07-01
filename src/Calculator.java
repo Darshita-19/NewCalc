@@ -24,7 +24,7 @@ public class Calculator
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 		int ch=0,res=0;
 		int n1=7;
